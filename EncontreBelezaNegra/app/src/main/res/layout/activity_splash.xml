@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"> <!-- Fundo preto -->
+
+    <!-- Texto "Encontre" com fonte cursiva e cor branca -->
+    <TextView
+        android:id="@+id/encontreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encontre"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="cursive"/>
+
+    <!-- Texto "Beleza Negra" com fonte em negrito e cor dourada -->
+    <TextView
+        android:id="@+id/belezaNegraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beleza Negra"
+        android:textSize="30sp"
+        android:textColor="#FFD700"
+        android:layout_below="@id/encontreText"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <!-- Barra de progresso circular pontilhada -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/belezaNegraText"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:visibility="visible" />
+</RelativeLayout>
