@@ -52,10 +52,18 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
     // Dependências principais
+    implementation(libs.fragment)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.coordinatorlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
